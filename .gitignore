@@ -1,2 +1,7 @@
 .vscode/*
 .idea/*
+.github/*
+.config/*
+GH-CLI/*
+GitHubCLI.tar.gz
+.replit
