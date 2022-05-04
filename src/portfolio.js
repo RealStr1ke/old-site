@@ -60,59 +60,84 @@ const skillsSection = {
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
+//   html5 css3-alt js node npm python docker windows java github git-alt database server centos ubuntu unity linux raspberry-pi square-terminal
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "HTML5",
+      fontAwesomeClassname: "fa-brands fa-html5"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "CSS3",
+      fontAwesomeClassname: "fa-brands fa-css3-alt"
     },
-    // {
-    //   skillName: "sass",
-    //   fontAwesomeClassname: "fab fa-sass"
-    // },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      fontAwesomeClassname: "fa-brands fa-js"
     },
-    // {
-    //   skillName: "reactjs",
-    //   fontAwesomeClassname: "fab fa-react"
-    // },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Python",
+      fontAwesomeClassname: "fa-brands fa-python"
     },
-    // {
-    //   skillName: "swift",
-    //   fontAwesomeClassname: "fab fa-swift"
-    // },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fa-brands fa-java"
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "fa-brands fa-node"
+    },
     {
       skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      fontAwesomeClassname: "fa-brands fa-npm"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    // {
-    //   skillName: "aws",
-    //   fontAwesomeClassname: "fab fa-aws"
-    // },
-    // {
-    //   skillName: "firebase",
-    //   fontAwesomeClassname: "fas fa-fire"
-    // },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Docker",
+      fontAwesomeClassname: "fa-brands fa-docker"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "Git",
+      fontAwesomeClassname: "fa-brands fa-git-alt"
+    },
+    {
+      skillName: "GitHub",
+      fontAwesomeClassname: "fa-brands fa-github"
+    },
+    {
+      skillName: "MongoDB & SQL",
+      fontAwesomeClassname: "fa-solid fa-database"
+    },
+    {
+      skillName: "Unity",
+      fontAwesomeClassname: "fa-brands fa-unity"
+    },
+    {
+      skillName: "Servers",
+      fontAwesomeClassname: "fa-solid fa-server"
+    },
+    {
+      skillName: "Windows",
+      fontAwesomeClassname: "fa-brands fa-windows"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fa-brands fa-linux"
+    },
+    {
+      skillName: "Ubuntu",
+      fontAwesomeClassname: "fa-brands fa-ubuntu"
+    },
+    {
+      skillName: "CentOS",
+      fontAwesomeClassname: "fa-brands fa-centos"
+    },
+    {
+      skillName: "Raspberry Pi",
+      fontAwesomeClassname: "fa-brands fa-raspberry-pi"
+    },
+    {
+      skillName: "Bash",
+      fontAwesomeClassname: "fa-solid fa-square-terminal"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
