@@ -1,6 +1,6 @@
 name: Check Format
 on:
-  push:
+#   push:
   pull_request:
       branches:
         - master
