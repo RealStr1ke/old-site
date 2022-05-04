@@ -64,79 +64,79 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "HTML5",
-      fontAwesomeClassname: "fa-brands fa-html5"
+      fontAwesomeClassname: "fab fa-html5"
     },
     {
       skillName: "CSS3",
-      fontAwesomeClassname: "fa-brands fa-css3-alt"
+      fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fa-brands fa-js"
+      fontAwesomeClassname: "fab fa-js"
     },
     {
       skillName: "Python",
-      fontAwesomeClassname: "fa-brands fa-python"
+      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "Java",
-      fontAwesomeClassname: "fa-brands fa-java"
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "Node.js",
-      fontAwesomeClassname: "fa-brands fa-node"
+      fontAwesomeClassname: "fab fa-node"
     },
     {
       skillName: "npm",
-      fontAwesomeClassname: "fa-brands fa-npm"
+      fontAwesomeClassname: "fab fa-npm"
     },
     {
       skillName: "Docker",
-      fontAwesomeClassname: "fa-brands fa-docker"
+      fontAwesomeClassname: "fab fa-docker"
     },
     {
       skillName: "Git",
-      fontAwesomeClassname: "fa-brands fa-git-alt"
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
       skillName: "GitHub",
-      fontAwesomeClassname: "fa-brands fa-github"
+      fontAwesomeClassname: "fab fa-github"
     },
     {
       skillName: "MongoDB & SQL",
-      fontAwesomeClassname: "fa-solid fa-database"
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "Unity",
-      fontAwesomeClassname: "fa-brands fa-unity"
+      fontAwesomeClassname: "fab fa-unity"
     },
     {
       skillName: "Servers",
-      fontAwesomeClassname: "fa-solid fa-server"
+      fontAwesomeClassname: "fas fa-server"
     },
     {
       skillName: "Windows",
-      fontAwesomeClassname: "fa-brands fa-windows"
+      fontAwesomeClassname: "fab fa-windows"
     },
     {
       skillName: "Linux",
-      fontAwesomeClassname: "fa-brands fa-linux"
+      fontAwesomeClassname: "fab fa-linux"
     },
     {
       skillName: "Ubuntu",
-      fontAwesomeClassname: "fa-brands fa-ubuntu"
+      fontAwesomeClassname: "fab fa-ubuntu"
     },
     {
       skillName: "CentOS",
-      fontAwesomeClassname: "fa-brands fa-centos"
+      fontAwesomeClassname: "fab fa-centos"
     },
     {
       skillName: "Raspberry Pi",
-      fontAwesomeClassname: "fa-brands fa-raspberry-pi"
+      fontAwesomeClassname: "fab fa-raspberry-pi"
     },
     {
       skillName: "Bash",
-      fontAwesomeClassname: "fa-solid fa-square-terminal"
+      fontAwesomeClassname: "fas fa-square-terminal"
     },
   ],
   display: true // Set false to hide this section, defaults to true
