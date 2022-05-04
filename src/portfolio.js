@@ -51,13 +51,10 @@ const skillsSection = {
   title: "My Skills",
   subTitle: "Full-Stack Developer who explores every tech stack and that's slightly insane",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Operating Systems: Microsoft Windows, Debian, Ubuntu, CentOS"),
+    emoji("⚡ Programming Languages: HTML, CSS, JavaScript, Python, Java, SQL"),
+    emoji("⚡ Programming Tools: Git, GitHub, NodeJS, Docker, MySQL, Unity, Bash, Raspberry Pi"),
+    emoji("⚡ Bilingual in English and French")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
