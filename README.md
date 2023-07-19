@@ -1,6 +1,8 @@
 # Thandi R. Menelas
+
 **Full-Stack Developer**  
 **Boynton Beach, Florida**
+
 **TMenelas@outlook.com | [https://str1ke.tech](https://str1ke.tech)**
 
 **My name is Thandi Menelas (also known as Str1ke or RealStr1ke). I'm a 15-year-old high school student who programs random projects for fun. I'm interested in data science, software development, and video game development.**
