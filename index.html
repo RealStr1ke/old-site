@@ -1,111 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thandi R. Menelas - Portfolio</title>
-  <link rel="stylesheet" href="assets/stylesheets/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thandi R. Menelas - Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/thandi-circle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer>
+      let i = 0;
+      let text = "I'm a 15-year-old high school student who programs random projects for fun. I'm interested in data science & software/videogame development.";
+      let speed = 65;
 
-<body>
+      function typeWriter(button) {
+        if(i < text.length) {
+            document.getElementById("about-message").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+  </head>
+
+<body onload="typeWriter()">
   <header>
-    <h1>Thandi R. Menelas</h1>
-    <h2>Full-Stack Developer</h2>
-    <h3>Boynton Beach, Florida</h3>
-    <p>Email: <a href="mailto:TMenelas@outlook.com">TMenelas@outlook.com</a> | Website: <a href="https://str1ke.tech">https://str1ke.tech</a></p>
+    <div id="heromain" class="hero min-h-screen" style="background-image: url(/assets/images/bg.jpg);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Thandi R. Menelas</h1>
+          <div class="divider"></div>
+          <button onclick="window.open('mailto:TMenelas@outlook.com?body=%5BReaching%20you%20from%20str1ke.tech%5D', '_blank');" class="btn btn-circle btn-ghost btn-sm"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"><title>Gmail</title><path fill="#a6adba" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></button>
+          <button onclick="window.open('https://github.com/RealStr1ke');" class="btn btn-circle btn-ghost btn-sm"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"><title>GitHub</title><path fill="#a6adba" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></button>
+          <p id="about-message" class="mb-5"></p>
+          <button class="btn btn-primary">useless button</button>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a 15-year-old high school student who just programs random projects for fun. Interested in data science, software, and video game development.</p>
-  </section>
+  <div id="info-divider" class="flex justify-center m-1 gap-1">
+    <div class="badge badge-secondary">Full-Stack Developer</div>
+    <div class="badge badge-secondary">Boynton Beach, Florida</div>
+  </div>
+<!--
+  <div class="flex justify-center">
+    <section id="cards" class="m-5 gap-2 flex flex-wrap justify-center max-w-5xl">
+      <section id="education">
+        <div class="card max-w-sm bg-base-100 shadow-xl image-full">
+          <figure><img src="/assets/images/hat.png" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Education</h2>
+            <p>
+              <ul>
+                <li>• Florida Atlantic University (Boca Raton, FL)</li>
+                <ul>
+                  <li>&emsp;◦ High School Diploma (Anticipated May 2025)</li>
+                  <li>&emsp;◦ Emphasis in Computer Science</li>
+                </ul>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img class="w-96" src="/assets/images/shake.png" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">General Skills</h2>
+            <p>
+              <ul>
+                <li>&emsp;• Organizational</li>
+                <li>&emsp;• Collaboration</li>
+                <li>&emsp;• Project Management</li>
+                <li>&emsp;• Problem-Solving</li>
+                <li>&emsp;• Critical Thinking</li>
+              </ul>
+              <ul>
+                <li>&emsp;• Visual Studio Code</li>
+                <li>&emsp;• JetBrains Suite</li>
+                <li>&emsp;• Server Management</li>
+                <li>&emsp;• Linux/Unix Computing</li>
+                <li>&emsp;• Version Control</li>
+              </ul>
+              <ul>
+                <li>&emsp;• Web Development</li>
+                <li>&emsp;• Data Science</li>
+                <li>&emsp;• Discord</li>
+                <li>&emsp;• Microsoft 365</li>
+                <li>&emsp;• Google Suites</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="additional-skills">
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure class="p-5"><img height="50" width="170" src="/assets/images/code.png" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Hard Skills</h2>
+            <p>
+              <ul>
+                <li><strong>Operating Systems:</strong> Microsoft Windows, Debian, Ubuntu, CentOS</li>
+                <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, C, C++, Rust, Python, Java, SQL</li>
+                <li><strong>Programming Tools:</strong> Git, GitHub, NodeJS, Docker, MySQL, Unity, Bash, SSH, Raspberry Pi</li>
+                <li><strong>Bilingual:</strong> English and French</li>
+                <li><strong>Articulate:</strong> Haitian Creole</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+-->
+    <div class="flex flex-col items-center p-5">
+      <div id="basicallypdf" class="max-w-4xl">
+        <section id="education">
+          <br>
+          <h2 class="font-bold text-3xl">Education</h2>
+          <br>
+          <ul>
+            <li>&emsp;• Florida Atlantic University (Boca Raton, FL)</li>
+            <ul>
+              <li>&emsp;&emsp;◦ High School Diploma (Anticipated May 2025)</li>
+              <li>&emsp;&emsp;◦ Emphasis in Computer Science</li>
+            </ul>
+          </ul>
+        </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>Florida Atlantic University (Boca Raton, FL)</li>
-      <ul>
-        <li>High School Diploma (Anticipated May 2025)</li>
-        <li>Emphasis in Computer Science</li>
-      </ul>
-    </ul>
-  </section>
+        <section id="skills">
+          <br>
+          <h2 class="font-bold text-3xl">Skills</h2>
+          <br>
+          <ul>
+            <li>&emsp;• Organizational</li>
+            <li>&emsp;• Collaboration</li>
+            <li>&emsp;• Project Management</li>
+            <li>&emsp;• Problem-Solving</li>
+            <li>&emsp;• Critical Thinking</li>
+          </ul>
+          <br>
+          <ul>
+            <li>&emsp;• Visual Studio Code</li>
+            <li>&emsp;• JetBrains Suite</li>
+            <li>&emsp;• Server Management</li>
+            <li>&emsp;• Linux/Unix Computing</li>
+            <li>&emsp;• Version Control</li>
+          </ul>
+          <br>
+          <ul>
+            <li>&emsp;• Web Development</li>
+            <li>&emsp;• Data Science</li>
+            <li>&emsp;• Discord</li>
+            <li>&emsp;• Microsoft 365</li>
+            <li>&emsp;• Google Suites</li>
+          </ul>
+          <br>
+        </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Organizational</li>
-      <li>Collaboration</li>
-      <li>Project Management</li>
-      <li>Problem-Solving</li>
-      <li>Critical Thinking</li>
-    </ul>
-    <ul>
-      <li>Visual Studio Code</li>
-      <li>JetBrains Suite</li>
-      <li>Server Management</li>
-      <li>Linux/Unix Computing</li>
-      <li>Version Control</li>
-    </ul>
-    <ul>
-      <li>Web Development</li>
-      <li>Data Science</li>
-      <li>Discord</li>
-      <li>Microsoft 365</li>
-      <li>Google Suites</li>
-    </ul>
-  </section>
+        <section id="additional-skills">
+          <br>
+          <h2 class="font-bold text-3xl">Additional Skills</h2>
+          <br>
+          <ul>
+            <li><strong>&emsp;• Operating Systems:</strong> Microsoft Windows, Debian, Ubuntu, CentOS</li>
+            <li><strong>&emsp;• Programming Languages:</strong> HTML, CSS, JavaScript, C, C++, Rust, Python, Java, SQL</li>
+            <li><strong>&emsp;• Programming Tools:</strong> Git, GitHub, NodeJS, Docker, MySQL, Unity, Bash, SSH, Raspberry Pi</li>
+            <li><strong>&emsp;• Bilingual:</strong> English and French</li>
+            <li><strong>&emsp;• Articulate:</strong> Haitian Creole</li>
+          </ul>
+          <br>
+        </section>
 
-  <section id="additional-skills">
-    <h2>Additional Skills</h2>
-    <ul>
-      <li><strong>Operating Systems:</strong> Microsoft Windows, Debian, Ubuntu, CentOS</li>
-      <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, C, C++, Rust, Python, Java, SQL</li>
-      <li><strong>Programming Tools:</strong> Git, GitHub, NodeJS, Docker, MySQL, Unity, Bash, SSH, Raspberry Pi</li>
-      <li><strong>Bilingual:</strong> English and French</li>
-      <li><strong>Articulate:</strong> Haitian Creole</li>
-    </ul>
-  </section>
+        <section id="experience">
+          <br>
+          <h2 class="font-bold text-3xl">Related Experience</h2>
+          <br>
+          <article>
+            <h3 class="font-bold text-xl">Madie Ives K-8 Preparatory Academy (Miami, FL)</h3>
+            <br>
+            <ul>
+              <li>&emsp;• Student Programming Leader (2016 - 2021)</li>
+              <ul>
+                <li>&emsp;&emsp;◦ Solely taught students how to start computer programming with robots and introduced regular concepts such as variables, conditional statements, syntax, pseudocode, and more.</li>
+                <li>&emsp;&emsp;◦ Aided staff members and students with technology and developed websites upon request.</li>
+              </ul>
+            </ul>
+          </article>
 
-  <section id="experience">
-    <h2>Related Experience</h2>
+          <article>
+            <br>
+            <h3 class="font-bold text-xl">Discord Bot Development (GitHub: RealStr1ke/Byte)</h3>
+            <br>
+            <ul>
+              <li>&emsp;• Lead Project Developer (2021 - Present)</li>
+              <ul>
+                <li>&emsp;&emsp;◦ Led the development of a Discord bot with a purpose to aid students in a school Discord server alongside other features.</li>
+              </ul>
+            </ul>
+          </article>
 
-    <article>
-      <h3>Madie Ives K-8 Preparatory Academy (Miami, FL)</h3>
-      <ul>
-        <li>Student Programming Leader (2016 - 2021)</li>
-        <ul>
-          <li>Solely taught students how to start computer programming with robots and introduced regular concepts such as variables, conditional statements, syntax, pseudocode, and more.</li>
-          <li>Aided staff members and students with technology and developed websites upon request.</li>
-        </ul>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Discord Bot Development (GitHub: RealStr1ke/Byte)</h3>
-      <ul>
-        <li>Lead Project Developer (2021 - Present)</li>
-        <ul>
-          <li>Led the development of a Discord bot with a purpose to aid students in a school Discord server alongside other features.</li>
-        </ul>
-      </ul>
-    </article>
-
-    <article>
-      <h3>Palm Beach County Library System (Boynton Beach, FL)</h3>
-      <ul>
-        <li>Reading Buddy (2022 - Present)</li>
-        <ul>
-          <li>Worked with young kids to try to overcome their phonetic and comprehension problems in reading.</li>
-        </ul>
-        <li>Teen Volunteer Position (2022 - Present)</li>
-        <ul>
-          <li>Helped the CATS (Children and Teen Services) department of the Lantana Road Branch Library manage tasks such as bookshelf management, displays, and more.</li>
-        </ul>
-      </ul>
-    </article>
-  </section>
-</body>
-
+          <article>
+            <br>
+            <h3 class="font-bold text-xl">Palm Beach County Library System (Boynton Beach, FL)</h3>
+            <br>
+            <ul>
+              <li>&emsp;• Reading Buddy (2022 - Present)</li>
+              <ul>
+                <li>&emsp;&emsp;◦ Worked with young kids to try to overcome their phonetic and comprehension problems in reading.</li>
+              </ul>
+              <li>&emsp;• Teen Volunteer Position (2022 - Present)</li>
+              <ul>
+                <li>&emsp;&emsp;◦ Helped the CATS (Children and Teen Services) department of the Lantana Road Branch Library manage tasks such as bookshelf management, displays, and more.</li>
+              </ul>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
