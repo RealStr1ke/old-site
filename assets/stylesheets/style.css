@@ -14,27 +14,11 @@ body {
 		'Segoe UI Symbol',
 		'Noto Color Emoji';
 	color: #444;
-	margin: 10px auto;
-	font:
-		18px/1.5 -apple-system,
-		BlinkMacSystemFont,
-		'Segoe UI',
-		Roboto,
-		'Helvetica Neue',
-		Arial,
-		'Noto Sans',
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji',
-		'Segoe UI Symbol',
-		'Noto Color Emoji';
-	color: #444;
 }
 
 h1,
 h2,
 h3 {
-	line-height: 1.2;
 	line-height: 1.2;
 }
 
