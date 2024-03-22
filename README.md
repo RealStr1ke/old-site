@@ -5,5 +5,5 @@ just adding some pizzazz to a portfolio owned by [Thandi M.](https://github.com/
 
 ![before](./assets/md-assets/before.png)
 
-## [After](https://zachltech.github.io/FakeStr1ke.github.io/) (made bio & some other stuff into a proper header)
+## [After](https://zachltech.github.io/FakeStr1ke.github.io/) (minimal card)
 
